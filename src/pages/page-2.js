@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
 import Image from '../components/image'
-import Implementation from '../components/image'
+// import Implementation from '../components/image'
 import Collapsed from '../components/image'
 import Expanded from '../components/image'
 
@@ -33,10 +33,10 @@ const SecondPage = () => (
       <Expanded />
     </div>
 
-    <h3>Implementation</h3>
+    {/* <h3>Implementation</h3>
     <div style={{ maxWidth: '300px', marginBottom: '1.45rem' }}>
       <Implementation />
-    </div>
+    </div> */}
 
 
     <Link to="/">Go back to the homepage</Link>

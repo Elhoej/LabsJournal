@@ -30,22 +30,22 @@ const Image = () => (
   />
 )
 
-const Implementation = () => {
-  <StaticQuery
-  query={graphql`
-    query {
-      placeholderImage: file(relativePath: { eq: "implementation.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `}
-  render={data => <Img fluid={data.placeholderImage.childImageSharp.fluid} />}
-/>
-}
+// const Implementation = () => {
+//   <StaticQuery
+//   query={graphql`
+//     query {
+//       placeholderImage: file(relativePath: { eq: "implementation.png" }) {
+//         childImageSharp {
+//           fluid(maxWidth: 300) {
+//             ...GatsbyImageSharpFluid
+//           }
+//         }
+//       }
+//     }
+//   `}
+//   render={data => <Img fluid={data.placeholderImage.childImageSharp.fluid} />}
+// />
+// }
 
 const Collapsed = () => {
   <StaticQuery
@@ -82,6 +82,6 @@ const Expanded = () => {
 }
 
 export default Image
-export default Implementation
+// export default Implementation
 export default collapsed
 export default expanded
